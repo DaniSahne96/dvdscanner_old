@@ -26,6 +26,10 @@
             android:name="de.dani.dvdscanner.ScanActivity"
             android:label="@string/title_activity_scan" >
         </activity>
+        <activity
+            android:name="de.dani.dvdscanner.HistoryActivity"
+            android:label="@string/title_activity_history" >
+        </activity>
     </application>
 
 </manifest>
