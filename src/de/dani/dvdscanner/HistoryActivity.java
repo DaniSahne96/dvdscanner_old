@@ -27,19 +27,10 @@ public class HistoryActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_history);
-		initMembers();
 		
-		try {
-			ds.open();
-			for (int i = 0; i < ds.getRows().size(); i++) {
-				historylist.add(ds.getRow(i));
-			}
-			ds.close();
-		} catch (Exception e) {
-			Toast.makeText(this, "Somesthing went wrong", Toast.LENGTH_LONG)
-					.show();
-			tv_debug.setText(e.toString());
-		}
+		initMembers();
+		rowsToList();
+		
 
 		lv_history.setAdapter(aAdpt);
 		btn_cleardb.setOnClickListener(this);
@@ -64,6 +55,8 @@ public class HistoryActivity extends Activity implements OnClickListener {
 					Toast.LENGTH_SHORT).show();
 			tv_debug.setText(ex.toString());
 		}
+		this.finish();
+		startActivity(getIntent());
 	}
 
 	private void initMembers() {
@@ -77,4 +70,18 @@ public class HistoryActivity extends Activity implements OnClickListener {
 				android.R.id.text1, historylist);
 	}
 
+	private void rowsToList(){
+		try {
+			ds.open();
+			for (int i = 0; i < ds.getRows().size(); i++) {
+				historylist.add(ds.getRow(i));
+			}
+			ds.close();
+		} catch (Exception e) {
+			Toast.makeText(this, "Somesthing went wrong", Toast.LENGTH_LONG)
+					.show();
+			tv_debug.setText(e.toString());
+		}
+	}
 }
+
