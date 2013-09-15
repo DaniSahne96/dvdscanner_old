@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DVD Scanner</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="btn_start_scan_activity">Scan</string>
+    <string name="btn_scan">Scan It!</string>
+    <string name="tv_format">Format: empty</string>
+    <string name="tv_content">Content: empty</string>
+    <string name="txt_no_data">No scan data received!</string>
+    <string name="btn_history">History</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="tv_history"></string>
+    <string name="btn_save">Save It!</string>
+    <string name="et_ean">Enter an EAN!</string>
+    <string name="et_name">Enter a name!</string>
+    <string name="et_fsk">Enter a FSK!</string>
+    <string name="btn_cleardb">Clear Database!</string>
+
+</resources>
