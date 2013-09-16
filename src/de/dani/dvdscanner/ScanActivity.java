@@ -30,7 +30,7 @@ public class ScanActivity extends Activity implements OnClickListener {
 
 		btn_scan.setOnClickListener(this);
 		btn_save.setOnClickListener(this);
-	}
+	} 
 
 	public void onClick(View view) {
 		switch (view.getId()) {
@@ -76,7 +76,7 @@ public class ScanActivity extends Activity implements OnClickListener {
 		startActivity(intent);
 
 	}
-
+/////////////////////////////////////////////dadbasjfbdsjbfsjdbf
 	public void initMembers() {
 		btn_scan = (Button) findViewById(R.id.btn_scan);
 		btn_save = (Button) findViewById(R.id.btn_save);
@@ -87,3 +87,8 @@ public class ScanActivity extends Activity implements OnClickListener {
 		ds = new DataSource(this);
 	}
 }
+
+
+
+
+
