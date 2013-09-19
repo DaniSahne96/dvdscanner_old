@@ -76,7 +76,7 @@ public class ScanActivity extends Activity implements OnClickListener {
 		startActivity(intent);
 
 	}
-/////////////////////////////////////////////dadbasjfbdsjbfsjdbf
+	
 	public void initMembers() {
 		btn_scan = (Button) findViewById(R.id.btn_scan);
 		btn_save = (Button) findViewById(R.id.btn_save);
